@@ -1,0 +1,5 @@
+<resources>
+	<string name="app_name">Wearface</string>
+	<string name="watchface_name">Weather Face</string>
+	<string name="temp"><b>%1$s</b> %2$s</string>
+</resources>
