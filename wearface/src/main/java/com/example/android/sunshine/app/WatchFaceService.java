@@ -137,7 +137,7 @@ public class WatchFaceService extends CanvasWatchFaceService implements GoogleAp
 			textPaint.setAntiAlias(true);
 
 			tempPaint = new Paint();
-			tempPaint.setTextSize(38);
+			tempPaint.setTextSize(36);
 			tempPaint.setColor(getPrimaryColor(false));
 			tempPaint.setAntiAlias(true);
 
@@ -167,7 +167,7 @@ public class WatchFaceService extends CanvasWatchFaceService implements GoogleAp
 			final String date = new SimpleDateFormat("ccc, dd MMM", Locale.getDefault()).format(cal.getTime());
 			final String time = new SimpleDateFormat("HH:mm", Locale.getDefault()).format(cal.getTime());
 			final String temp = String.format(getResources().getString(R.string.temp),
-					currentWeatherData.minTemp, currentWeatherData.maxTemp);
+					currentWeatherData.maxTemp, currentWeatherData.minTemp);
 			float textTimeXOffset = textPaint.measureText(time) / 2;
 
 			canvas.drawText(time,
@@ -198,7 +198,7 @@ public class WatchFaceService extends CanvasWatchFaceService implements GoogleAp
 
 					canvas.drawBitmap(bitmap,
 							bounds.centerX() - width / 2,
-							bounds.height() * 0.60f,
+							bounds.height() * 0.58f,
 							null);
 
 					bitmap.recycle();
